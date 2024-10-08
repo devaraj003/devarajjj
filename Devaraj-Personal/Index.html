@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Devaraj Bhojanapu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Style.css"> 
+</head>
+<body style="width: 100%;">
+<!---Menu Bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="IMG/Logo.png" alt="Logo" class="d-inline-block align-text-top" width="250" height="150">
+           </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-custom-chat" onclick="redirectToURL()">Let's Chat</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!---User-->
+    <section class="hero text-center" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="new col-lg-6 my-auto">
+                    <h1>Welcome to my Portfolio</h1>
+                    <h2>Hi I'm <span style="color: #0077FF;">Devaraj</span></h2>
+                    <h3>Product Designer</h3>
+                    <p>Collaborating with highly skilled individuals, our agency delivers top-quality services.</p>
+                    <div class="mt-4">
+                        <a href="#" class="btn btn-custom me-2">Hire Me!</a>
+                        <a href="#" class="btn btn-outline-primary filter-butn" id="downloadBtn" >Download CV<i class="fa fa-download" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="news col-lg-6">
+                    <img src="IMG/image-@dev.jpg" alt="User" class="profile-img mx-auto">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---Apps-->    
+<div class="container-fluid pt-5 pb-5" style="flex-wrap:wrap; flex-direction: row; background-color:  #F8F8F8; flex-direction: column; height:auto; justify-content: center; padding: auto;">
+    <div class="container-social" style="flex-direction: row;">
+        <div class="img-social row text-center">
+            <div class="col-6 col-md-2 mx-auto">
+                <img src="IMG/logo-1.png" alt="jQuery" class="img-fluid">
+            </div>
+            <div class="col-6 col-md-2 mx-auto">
+                <img src="IMG/logo-2.png" alt="WordPress" class="img-fluid">
+            </div>
+            <div class="col-6 col-md-2 mx-auto">
+                <img src="IMG/logo-3.png" alt="Less" class="img-fluid">
+            </div>
+            <div class="col-6 col-md-2 mx-auto">
+                <img src="IMG/logo-4.png" alt="Sass" class="img-fluid">
+            </div>
+            <div class="col-6 col-md-2 mx-auto">
+                <img src="IMG/logo-5.png" alt="Spotify" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+ <!---About-->   
+    <section class="about text-center" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="IMG/image-@dev.jpg" alt="user" class="about-img">
+                </div>
+                <div class="col-md-6 about-text text-md-start">
+                    <h3>About Me</h3>
+                    <h2><span class="text-primary">1 Year </span>Experience on Product Design</h2>
+                    <p>Hello there! I'm <strong>Devaraj</strong>. I specialize in web design and development, and I'm deeply passionate and committed to my craft. With <strong>1 years</strong> of experience as a professional graphic designer.</p>
+                    
+                    
+                    <div>
+                        <button onclick="changeProgress('X')" id="mainskills" class="X btn btn-outline-primary filter-btn">Main Skills</button>
+                        <button onclick="changeProgress('Y')" id="awards" class="Y btn btn-outline-primary filter-btn">Awards</button>
+                        <button onclick="changeProgress('Z')" id="Education" class="Z btn btn-outline-primary filter-btn">Education</button>
+                    </div>
+    
+                
+                    <div class="mt-4">
+                        <h5 id="heading1">User Experience Design-UI/UX</h5>
+                        <div class="progress" >
+                            <div id="progress1" class="progress-bar" role="progressbar" style="width: 90%"></div>
+                        </div>
+    
+                        <h5 id="heading2">Web & User Interface Design-Development</h5>
+                        <div class="progress">
+                            <div  id="progress2" class="progress-bar" role="progressbar" style="width: 80%" ></div>
+ </div>
+    
+                        <h5 id="heading3">Interaction Design-Animation</h5>
+                        <div class="progress">
+                            <div id="progress3" class="progress-bar" role="progressbar" style="width: 50%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+<!---Services-->    
+    <section class="services text-center" id="services">
+            <div class="container">
+                <h5 class="text-uppercase text-primary">Services</h5>
+                <h2>Exploring My Design <span>Skills</span></h2>
+                <p>We transform your ideas into a distinctive web project that both inspires you and captivates your customers.</p>
+                
+                <div id="servicesCarousel" class="carousel slide">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card  mb-5 bg-white rounded">
+                                                     <div class="cardss">
+                                                        <i class="fa-solid fa-user-large"></i>
+                                            <h5 class="card-title">Website / App Design UX / UI Design</h5>
+                                            <p class="card-text">Creating Engaging Digital Experiences for Websites and Apps through UX/UI Design</p>
+                                            <a href="#" class="btn btn-link" style="text-decoration: none; color: black;" >Learn more →</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card   mb-5 bg-white rounded">
+                                       
+                                        <div class="cardss">
+                                            <i class="fa-solid fa-user-large"></i>
+                                            <h5 class="card-title">Creative Content</h5>
+                                            <p class="card-text">Elevating Brand Using Creative Ideas</p>
+                                            <a href="#" class="btn btn-link" style="text-decoration: none; color: black;">Learn more →</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6" >
+                                    <div class="card   mb-5 bg-white rounded" >
+                                        
+                                        <div class="cardss">
+                                            <i class="fa-solid fa-user-large"></i>
+                                            <h5 class="card-title">UI/UX Designing</h5>
+                                            <p class="card-text">Unlocking the World of Multivendor eCommerce Websites</p>
+                                            <a href="#" class="btn btn-link" style="text-decoration: none; color: black;">Learn more →</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+     </section>
+<!---Milestones-->
+<section class="milestone-section">
+    <div class="container">
+        <h4 class="mb-4">OUR MILESTONES</h4>
+        <h2 class="mb-5">What sets our studio apart for your projects?</h2>
+        <div class="row g-4">
+            <div class="col-md-3 col-sm-6">
+                <div class="milestone-card">
+                    <h3 class="milestone-title">8300+</h3>
+                    <p class="milestone-description">Figma ipsum component variant main layer. Hand.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="milestone-card">
+                    <h3 class="milestone-title">100%</h3>
+                    <p class="milestone-description">Figma ipsum component variant main layer. Union.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="milestone-card">
+                    <h3 class="milestone-title">3.5K</h3>
+                    <p class="milestone-description">Figma ipsum component variant main layer.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="milestone-card">
+                    <h3 class="milestone-title">240+</h3>
+                    <p class="milestone-description">Figma ipsum component variant main layer.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!---Projects--->
+<section class="portfolio-section">
+    <div class="container">
+        <h4 class="titles">OUR PROJECTS</h4>
+        <h2 class="title">Presenting My Design Portfolio and Case Studies</h2>
+        <div class="pro-butns d-flex justify-content-center mb-4 flex-wrap">
+            <button class="A btn btn-outline-primary filter-btn" onclick="changeimage('A')" >All</button>
+            <button class="B btn btn-outline-primary filter-btn" onclick="changeimage('B')">UI/UX Design</button>
+            <button class="C btn btn-outline-primary filter-btn" onclick="changeimage('C')">Branding Design</button>
+            <button class="D btn btn-outline-primary filter-btn" onclick="changeimage('D')">WordPress</button>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6 portfolio-item" >
+                <img src="IMG/pro-1.png" alt="" id="projectsss" class="projectsss">
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item" >
+                <img src="IMG/pro-2.png" alt="" id="projectsss" class="projectsss">
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item" >
+                <img src="IMG/pro-3.png" alt=""   id="projectsss" class="projectsss">
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item" >
+                <img src="IMG/pro-4.png" alt=""  id="projectsss" class="projectsss">
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item" >
+                <img src="IMG/pro-5.png" alt=""   id="projectsss" class="projectsss">
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item">
+                <img src="IMG/pro-6.png" alt=""   id="projectsss" class="projectsss">
+            </div>
+        </div>
+    </div>
+</section>
+<!---Contact Form-->
+<section class="contact-form">
+    <div class="container">
+        <h4 class="contcat-titles mb-4">Contact Me</h4>
+        <h2 class="contact-title mb-4">Request Free Consultancy</h2>
+        <div class="row g-4">
+            <div class="col-lg-5">
+                <div class="info-box">
+                    <h5>24/7 Available</h5>
+                    <h3>+917396106066</h3>
+                    <p><strong>Address:</strong>Sivapuram,Vayalpad,Annamayya</p>
+                    <p><strong>Email:</strong> bhojanapudevaraj@gmail.com</p>
+                    <p><strong>Fax:</strong>+9107396106066</p>
+                    <p><strong>Work Hours:</strong> Mon - Sat: 9:00 - 18:00</p>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="Email Address" required>
+                            </div>
+                        </div>
+                        <input type="text" class="form-control" placeholder="How can we help you?" required>
+                        <textarea class="form-control" id="ta" rows="5" placeholder="How can we help you?" required></textarea>
+                        <div class="form-check mt-3">
+                            <input type="checkbox" required>
+                            <label class="cb" >
+                            By submitting, I'm agreed to the <a href="#">Terms & Conditions</a>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-custom-req mt-4">Request Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+          <div class="social d-flex" style="flex-wrap: wrap; justify-content: center;" id="contact">
+            <img src="IMG/Logo.png" id="Logo" alt="img" style="margin-left: 50px;" width="250" height="150"><br> 
+            <p class="para pt-5 mt-3" style="color: white;">&copy; Copyright 2023. All Rights Reserved.</p>
+            <div class="contact d-flex pe-5" style="margin-top: 60px; margin-left: auto;">
+               <p><strong style="color: #ffffff;">Follow us:</strong></p>
+               <a href="https://www.facebook.com/bhojanapu.devaraj?mibextid=ZbWKwL" target="_blank" class="ps-2"><img src="IMG/FB.png" alt="Facebook" style="width: 30px;" ></a>
+               <a href="https://x.com/Devaraj049" class="ps-4"
+                target="_blank"><img src="IMG/X.png"   alt="X" style="width: 30px; border-radius: 50%;" ></a>
+               <a href="https://www.linkedin.com/in/devaraj-bhojanapu-323143329/"  target="_blank"  class="ps-4"><img src="IMG/LINKED IN.png" alt="linkedin" style="width: 30px; border-radius: 50%;" ></a>
+               <a href="mailto:bhojanapudevaraj@gmail.com" alt="mail" class="ps-4"  target="_blank" ><img src="IMG/MAIL.png"alt="Mail" style="width: 30px; border-radius: 50%; " ></a>
+            </div>
+            </div>
+</section>
+<script src="Script.js"></script>    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
